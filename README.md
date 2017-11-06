@@ -23,4 +23,8 @@ $ docker-compose up --build
 
 - Docker 
 - Docker compose
+- Composer (optional)
 
+### Composer
+
+- Use composer to update included projects in project-name/volume/project-name/.
