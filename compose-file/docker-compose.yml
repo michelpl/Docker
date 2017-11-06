@@ -4,7 +4,7 @@ db:
         environment:
                 MYSQL_ROOT_PASSWORD: root
 magento:
-        build: ../magento
+        build: ../magento/php-7.1
         ports:
                 - 8080:80
         links:
