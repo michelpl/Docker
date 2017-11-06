@@ -9,3 +9,5 @@ web:
                 - 8080:80
         links:
                 - db
+        volumes:
+                - ./volume/opencart/upload:/var/www/html/opencart
