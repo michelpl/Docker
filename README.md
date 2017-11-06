@@ -1,7 +1,7 @@
 # Docker
 Repositório montado para build de ambiente de desenvolvimento PHP
 
-Stack
+### Stack
 
 - Mysql(5.7)
 - PHP (5 e 7)
