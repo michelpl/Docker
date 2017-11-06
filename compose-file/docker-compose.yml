@@ -1,0 +1,12 @@
+db:
+        image: mysql:5.7
+        restart: always
+        environment:
+                MYSQL_ROOT_PASSWORD: root
+magento:
+        build: ../magento
+        ports:
+                - 8080:80
+        links:
+                - db
+                 
