@@ -9,8 +9,3 @@ web:
                 - 8080:80
         links:
                 - db
-        run: touch /var/www/html/teste.php
-
-
-                 
-
