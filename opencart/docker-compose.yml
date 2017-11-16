@@ -1,11 +1,19 @@
-db:
-        image: mysql:5.7
-        restart: always
-        environment:
-                MYSQL_ROOT_PASSWORD: root
-web:
-        build: php-7.1
-        ports:
-                - 8080:80
-        links:
-                - db
+version: '3'
+
+services:
+   db:
+     image: mysql:5.7
+     restart: always
+     environment:
+       MYSQL_ROOT_PASSWORD: root
+       MYSQL_DATABASE: opencart
+
+   web:
+     depends_on:
+       - db
+     build: php-7.1/
+     ports:
+       - "8000:80"
+     restart: always
+
+
