@@ -1,0 +1,123 @@
+2018-02-22T21:32:39+00:00 INFO (6): v2.14.08 [Uecommerce_Mundipagg_Model_Api::sendJSON] Order #100000001 | Request url:
+https://sandbox.mundipaggone.com/Sale/
+2018-02-22T21:32:40+00:00 INFO (6): v2.14.08 [Uecommerce_Mundipagg_Model_Api::sendJSON] Order #100000001 | Request:
+{
+    "Order": {
+        "OrderReference": "100000001"
+    },
+    "BoletoTransactionCollection": [
+        {
+            "AmountInCents": 10500,
+            "BankNumber": 341,
+            "Instructions": "teste",
+            "DocumentNumber": "",
+            "Options": {
+                "CurrencyIso": "BRL",
+                "DaysToAddInBoletoExpirationDate": "3"
+            },
+            "BillingAddress": {
+                "AddressType": "Residential",
+                "City": "Rio de Janeiro",
+                "District": "xxx",
+                "Complement": "",
+                "Number": "teste",
+                "State": "RJ",
+                "Street": "teste",
+                "ZipCode": "20921004",
+                "Country": "Brazil"
+            }
+        }
+    ],
+    "Buyer": {
+        "DocumentNumber": "33649428032",
+        "DocumentType": "CPF",
+        "Email": "teste@teste.com",
+        "EmailType": "Personal",
+        "Name": "teste teste",
+        "PersonType": "Person",
+        "MobilePhone": "",
+        "BuyerCategory": "Normal",
+        "FacebookId": "",
+        "TwitterId": "",
+        "BuyerReference": "",
+        "CreateDateInMerchant": "2018-02-22T18:32:39",
+        "LastBuyerUpdateInMerchant": "2018-02-22T21:32:39",
+        "AddressCollection": [
+            {
+                "AddressType": "Residential",
+                "City": "Rio de Janeiro",
+                "District": "xxx",
+                "Complement": "",
+                "Number": "teste",
+                "State": "RJ",
+                "Street": "teste",
+                "ZipCode": "20921004",
+                "Country": "Brazil"
+            }
+        ]
+    },
+    "ShoppingCartCollection": [
+        {
+            "DeliveryDeadline": "2018-02-27T18:32:39",
+            "EstimatedDeliveryDate": "2018-02-27T18:32:39",
+            "FreightCostInCents": 500,
+            "ShippingCompany": "Correios",
+            "ShoppingCartItemCollection": [
+                {
+                    "Description": "teste",
+                    "ItemReference": "1",
+                    "Name": "Produto teste",
+                    "Quantity": 1,
+                    "UnitCostInCents": 10000,
+                    "TotalCostInCents": 10000
+                }
+            ],
+            "DeliveryAddress": {
+                "City": "Rio de Janeiro",
+                "District": "xxx",
+                "Complement": "",
+                "Number": "teste",
+                "State": "RJ",
+                "Street": "teste",
+                "ZipCode": "20921004",
+                "Country": "Brazil",
+                "AddressType": "Shipping"
+            }
+        }
+    ],
+    "CreditCardTransactionCollection": null,
+    "CreditCardTransactionResultCollection": null
+}
+
+2018-02-22T21:32:40+00:00 INFO (6): v2.14.08 [Uecommerce_Mundipagg_Model_Api::sendJSON] Order #100000001 | Response:
+{
+    "ErrorReport": null,
+    "InternalTime": 92,
+    "MerchantKey": "cecc3f3d-11cb-4c2f-af76-36547afea6b4",
+    "RequestKey": "4908de1b-86b4-4afe-b112-c521b4a97ff4",
+    "BoletoTransactionResultCollection": [
+        {
+            "AcquirerReturnCode": null,
+            "AcquirerReturnMessage": null,
+            "AmountInCents": 10500,
+            "Barcode": "34191.75462 00911.951234 41234.510000 1 74460000010500",
+            "BoletoTransactionStatus": "Generated",
+            "BoletoUrl": "https:\/\/sandbox.mundipaggone.com\/Boleto\/ViewBoleto.aspx?3c1b581f-f095-4502-9dc5-3462e16a000c",
+            "DocumentNumber": "093240515",
+            "NossoNumero": "46009119",
+            "Success": true,
+            "TransactionKey": "3c1b581f-f095-4502-9dc5-3462e16a000c",
+            "TransactionReference": "a1d40de1-c447-46fc-a051-ce28591607b5"
+        }
+    ],
+    "BuyerKey": "dfd61860-9faf-40cb-8aec-c11daf3a9826",
+    "CreditCardTransactionResultCollection": [],
+    "CryptoTransactionResultCollection": [],
+    "OnlineDebitTransactionResult": null,
+    "OrderResult": {
+        "CreateDate": "2018-02-22T21:32:40",
+        "OrderKey": "93ec7a1b-2beb-4cff-8cd0-88152d10f6b8",
+        "OrderReference": "100000001"
+    }
+}
+

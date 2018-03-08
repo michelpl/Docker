@@ -1,13 +1,20 @@
-db:
-        image: mysql:5.7
-        restart: always
-        environment:
-                MYSQL_ROOT_PASSWORD: root
-magento:
-        build: ../magento/php-7.1
-        ports:
-                - 8080:80
-        links:
-                - db
+version: '3.2'
 
-                 
+services:
+   db:
+     image: mysql:5.7
+     restart: always
+     environment:
+       MYSQL_ROOT_PASSWORD: root
+       MYSQL_DATABASE: magento
+
+   web:
+     depends_on:
+       - db
+     build: php-5.6/
+     ports:
+       - "8000:80"
+     volumes:
+      - type: bind
+        source: ./volume/magento/
+        target: /var/www/html/magento/

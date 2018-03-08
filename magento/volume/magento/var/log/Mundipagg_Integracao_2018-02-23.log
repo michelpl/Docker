@@ -1,0 +1,137 @@
+2018-02-23T17:55:06+00:00 INFO (6): v2.14.08 [Uecommerce_Mundipagg_Model_Api::sendJSON] Order #100000002 | Request url:
+https://sandbox.mundipaggone.com/Sale/
+2018-02-23T17:55:08+00:00 INFO (6): v2.14.08 [Uecommerce_Mundipagg_Model_Api::sendJSON] Order #100000002 | Request:
+{
+    "Order": {
+        "OrderReference": "100000002"
+    },
+    "CreditCardTransactionCollection": [
+        {
+            "AmountInCents": 10500,
+            "CreditCard": {
+                "CreditCardNumber": "****************",
+                "HolderName": "teste",
+                "SecurityCode": "***",
+                "ExpMonth": "*",
+                "ExpYear": "**",
+                "CreditCardBrand": "Visa"
+            },
+            "CreditCardOperation": "AuthOnly",
+            "InstallmentCount": "1",
+            "Options": {
+                "CurrencyIso": "BRL",
+                "PaymentMethodCode": 1
+            }
+        }
+    ],
+    "Buyer": {
+        "DocumentNumber": "***********",
+        "DocumentType": "CPF",
+        "Email": "***************",
+        "EmailType": "Personal",
+        "Name": "teste teste",
+        "PersonType": "Person",
+        "MobilePhone": "",
+        "BuyerCategory": "Normal",
+        "FacebookId": "",
+        "TwitterId": "",
+        "BuyerReference": "",
+        "CreateDateInMerchant": "2018-02-23T14:55:06",
+        "LastBuyerUpdateInMerchant": "2018-02-23T17:55:06",
+        "AddressCollection": [
+            {
+                "AddressType": "Residential",
+                "City": "Rio de Janeiro",
+                "District": "xxx",
+                "Complement": "",
+                "Number": "teste",
+                "State": "RJ",
+                "Street": "teste",
+                "ZipCode": "20921004",
+                "Country": "Brazil"
+            }
+        ]
+    },
+    "ShoppingCartCollection": [
+        {
+            "DeliveryDeadline": "2018-02-28T14:55:06",
+            "EstimatedDeliveryDate": "2018-02-28T14:55:06",
+            "FreightCostInCents": 500,
+            "ShippingCompany": "Correios",
+            "ShoppingCartItemCollection": [
+                {
+                    "Description": "teste",
+                    "ItemReference": "1",
+                    "Name": "Produto teste",
+                    "Quantity": 1,
+                    "UnitCostInCents": 10000,
+                    "TotalCostInCents": 10000
+                }
+            ],
+            "DeliveryAddress": {
+                "City": "Rio de Janeiro",
+                "District": "xxx",
+                "Complement": "",
+                "Number": "teste",
+                "State": "RJ",
+                "Street": "teste",
+                "ZipCode": "20921004",
+                "Country": "Brazil",
+                "AddressType": "Shipping"
+            }
+        }
+    ]
+}
+
+2018-02-23T17:55:08+00:00 INFO (6): v2.14.08 [Uecommerce_Mundipagg_Model_Api::sendJSON] Order #100000002 | Response:
+{
+    "ErrorReport": null,
+    "InternalTime": 287,
+    "MerchantKey": "cecc3f3d-11cb-4c2f-af76-36547afea6b4",
+    "RequestKey": "3118cda7-81f7-4af0-9051-414d1d2b048f",
+    "BoletoTransactionResultCollection": [],
+    "BuyerKey": "0511d869-8f19-4001-ad22-2c39acf146bd",
+    "CreditCardTransactionResultCollection": [
+        {
+            "AcquirerMessage": "Simulator|Transação de simulação autorizada com sucesso",
+            "AcquirerName": "Simulator",
+            "AcquirerReturnCode": "0",
+            "AffiliationCode": "",
+            "AmountInCents": 10500,
+            "AuthorizationCode": "986614",
+            "AuthorizedAmountInCents": 10500,
+            "CapturedAmountInCents": null,
+            "CapturedDate": null,
+            "CreditCard": {
+                "CreditCardBrand": "Visa",
+                "InstantBuyKey": "f9698358-0531-47fe-a361-fca2d9f91339",
+                "IsExpiredCreditCard": false,
+                "MaskedCreditCardNumber": "411111****1111"
+            },
+            "CreditCardOperation": "AuthOnly",
+            "CreditCardTransactionStatus": "AuthorizedPendingCapture",
+            "DueDate": null,
+            "EstablishmentCode": null,
+            "ExternalTime": 0,
+            "PaymentMethodName": "Simulator",
+            "RefundedAmountInCents": null,
+            "Success": true,
+            "ThirdPartyAffiliationCode": "",
+            "TransactionIdentifier": "147663",
+            "TransactionKey": "8d5daa76-818c-4cfa-be32-58aa07098bac",
+            "TransactionKeyToAcquirer": "1d1e39797a9741a5",
+            "TransactionReference": "7e23f195-8447-4fe0-b606-2df4a0077c6b",
+            "UniqueSequentialNumber": "290916",
+            "VoidedAmountInCents": null,
+            "WalletUrl": null
+        }
+    ],
+    "CryptoTransactionResultCollection": [],
+    "OnlineDebitTransactionResult": null,
+    "OrderResult": {
+        "CreateDate": "2018-02-23T17:55:08",
+        "OrderKey": "49854963-1040-48e8-a3fe-a7e7fc98c037",
+        "OrderReference": "100000002"
+    }
+}
+
