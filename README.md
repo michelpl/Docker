@@ -18,7 +18,7 @@ Example:
 cd opencart/
 $ docker-compose up --build
 ```
-### Access via broser after build
+### Access via browser after build
 
 ```
 localhost:8000/project-name/
