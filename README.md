@@ -11,13 +11,19 @@ Docker building for PHP development.
 - Opencart 3.x
 
 
-### Usage
+### Build
 
 ```
 Example:
 cd opencart/
 $ docker-compose up --build
 ```
+### Access via broser after build
+
+```
+localhost:8000/project-name/
+```
+
 
 ### Requirements
 
